@@ -1,0 +1,115 @@
+@use '../styles/mixin.scss' as mixin;
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 95px;
+    img {
+        width: 174px;
+    }
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    .mainLeft {
+        width: 50%;
+
+        img {
+            width: 600px;
+            margin: 0 auto;
+
+        }
+    }
+    .mainRight {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+        box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 60px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 700;
+                color: mixin.$text-color;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.mainRight {
+    .loginForm {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-family: 'Montserrat', sans-serif;
+
+        input {
+            width: 445px;
+            height: 50px;
+            padding: 10px;
+            border: 2px solid rgba(84, 95, 125, 0.15);
+            border-radius: 5px;
+        }
+
+        .span {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: 30%;
+                right: 15px;
+                color: mixin.$accent;
+                font-weight: 600;
+                font-size: 12px;
+            }
+        }
+
+        a {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: left;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            color: mixin.$accent;
+        }
+
+        button {
+            height: 50px;
+            border: none;
+            background-color: mixin.$accent;
+            color: white;
+            letter-spacing: 0.1rem;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+}
