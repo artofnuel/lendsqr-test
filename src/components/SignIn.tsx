@@ -9,12 +9,12 @@ const SignIn = () => {
     <div className={styles.container}>
       {/* Logo */}
       <div className={styles.navbar}>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
       </div>
       {/* Main Content */}
       <div className={styles.main}>
         <div className={styles.mainLeft}>
-          <img src={signin} alt="" />
+          <img src={signin} alt="Welcome Image" />
         </div>
         <div className={styles.mainRight}>
           <div className={styles.heading}>

@@ -1,0 +1,12 @@
+@use '../styles/mixin.scss' as mixin;
+
+
+.container {
+    width: 100%;
+    background-color:  #E5E5E5;
+}
+
+.subContainer {
+    width: 100%;
+    display: flex;
+}
